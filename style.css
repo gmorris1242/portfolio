@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* overflow: hidden; */
+}
+
+#page-one {
+  background-color: red;
+}
+
+#page-two {
+  background-color: yellow;
+}
+
+#page-three {
+  background-color: green;
+}
+
+#page-four {
+  background-color: purple;
+}
+
+.container {
+  width: 100%;
+  min-width: 100%;
+  height: 100vh;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  right: 00%;
+  /* display: flex; */
+}
