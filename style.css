@@ -2,26 +2,46 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Disco;
+}
+
+@font-face {
+  font-family: Disco;
+  src: url("DISCO___.ttf");
+}
+
+@font-face {
+  font-family: PaintedLady;
+  src: url("Painted Lady.otf");
 }
 
 body {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 #page-one {
-  background-color: red;
+  background-color: #9a454d;
 }
 
-#page-two {
-  background-color: yellow;
+#page-two,
+#page-three,
+#page-four {
+  background-color: white;
 }
 
 #page-three {
-  background-color: green;
 }
 
 #page-four {
-  background-color: purple;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  right: 00%;
+  display: flex;
+  transition: all .75s linear;
 }
 
 .container {
@@ -30,10 +50,105 @@ body {
   height: 100vh;
 }
 
-.main-container {
-  height: 100vh;
+.inner-container {
+  /* padding-top: 67px; */
   width: 100%;
-  position: absolute;
-  right: 00%;
-  /* display: flex; */
+  height: 100vh;
+  overflow: auto;
+}
+
+/* NOTE: NAV */
+nav {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  display: none;
+  padding: 10px;
+  margin: 0 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .75s linear;
+}
+
+.active {
+  color: #f7a072;
+}
+
+nav i {
+  padding: 10px;
+  font-size: 35px;
+  transition: all 1.2s linear;
+  cursor: pointer;
+  animation: popin 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popin{
+  0% {
+    transform:scale(0);
+  }
+  100%{
+    transform:scale(1);
+  }
+}
+
+.spin {
+  transform: rotate(360deg);
+}
+
+/* NOTE: page one */
+
+.logo-div {
+  min-width: 200px;
+  min-height: 200px;
+  max-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 40px;
+  animation: slideUp 2s 1.5s forwards;
+  /* margin-top: 300px; */
+  opacity: 0;
+    /* box-shadow: 1px 1px 500px 1px #423e37; */
+}
+
+@keyframes slideUp {
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+.logo-div h1{
+  font-size: 60px;
+}
+
+.logo-div h3 {
+  font-size: 25px;
+}
+
+.logo-div img {
+  width: 100%;
+  height: 100vh;
+}
+
+.page-one-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
