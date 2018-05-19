@@ -155,28 +155,31 @@ nav i {
 
 /* NOTE: about */
 
-.page-two-inner h1,
-.page-three-inner h1,
-.page-four-inner h1 {
+.page-two-inner .header,
+.page-three-inner .header,
+.page-four-inner .header {
   margin-top: 67px;
   padding: 30px 15px;
   font-size: 80px;
   color: #423e37;
 }
 
-.about-container {
+.about-container,
+.work-container {
   display: flex;
   justify-content: space-around;
   width: 100%;
   flex-wrap: wrap;
 }
 
-.about-container .picture img {
+.about-container .picture img,
+.work-container .picture img {
   width: 100%;
   height: auto;
 }
 
-.about-container .picture {
+.about-container .picture,
+.work-container .picture {
   width: 45%;
   min-width: 375px;
   padding: 15px;
@@ -192,4 +195,49 @@ nav i {
   color: #423e37;
   line-height: 2;
   min-width: 375px;
+}
+
+/* NOTE: work page */
+
+.work-container {
+  margin-bottom: 67px;
+  border-radius: 1px solid black;
+}
+
+.work-details h1 {
+  font-size: 40px;
+}
+
+.work-details p {
+  padding: 5px 15px;
+}
+
+.work-details .tech-details {
+  color: #9a454d;
+}
+
+.work-details {
+  width: 45%;
+  min-width: 375px;
+  padding: 15px;
+  color: #423e37;
+  line-height: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.work-btn {
+  border: 1px solid #9a454d;
+  padding: 10px 50px;
+  margin-top: 10px;
+  background-color: #9a454d;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  width: 60%;
+  margin-left: 15px;
 }
