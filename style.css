@@ -5,6 +5,10 @@
   font-family: Disco;
 }
 
+.avoid-clicks {
+  pointer-events: none;
+}
+
 @font-face {
   font-family: Disco;
   src: url("fonts/DISCO___.ttf");
@@ -67,6 +71,7 @@ nav {
   color: white;
   padding: 5px;
   font-size: 18px;
+  transition: all .75s linear;
 }
 
 nav ul {
@@ -81,7 +86,7 @@ nav li {
   margin: 0 5px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all .75s linear;
+  /* transition: all .1s linear; */
 }
 
 .active {
