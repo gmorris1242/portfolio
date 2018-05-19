@@ -9,6 +9,11 @@ var navBar = $("nav");
 var reverseNavItem = $(navItem.get().reverse());
 var counter = 0;
 
+// main.on("touchmove", function(event) {
+//     event.preventDefault();
+//     event.stopPropagation();
+// });
+
 homeBtn.click(function() {
   main.css("right","0");
   navItem.removeClass("active");
