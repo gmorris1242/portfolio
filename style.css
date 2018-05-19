@@ -191,9 +191,10 @@ nav i {
 
 }
 
-.about-container p {
+.about-container .about-details {
   width: 45%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 15px;
@@ -202,11 +203,17 @@ nav i {
   min-width: 375px;
 }
 
+.skills {
+  color: #9a454d;
+  font-size: .75rem;
+  text-align: center;
+  width: 100%;
+}
+
 /* NOTE: work page */
 
 .work-container {
   margin-bottom: 67px;
-  border-radius: 1px solid black;
 }
 
 .work-details h1 {
