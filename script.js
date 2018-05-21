@@ -8,11 +8,7 @@ var navItem = $("li");
 var navBar = $("nav");
 var reverseNavItem = $(navItem.get().reverse());
 var counter = 0;
-
-// main.on("touchmove", function(event) {
-//     event.preventDefault();
-//     event.stopPropagation();
-// });
+var talk = $("#talk");
 
 homeBtn.click(function() {
   main.css("right","0");
@@ -45,6 +41,14 @@ contactBtn.click(function() {
   navBar.css("color","#9a454d")
   navBar.css("background-color","white")
 });
+
+talk.click(function(){
+  main.css("right","300%");
+  navItem.removeClass("active");
+  contactBtn.addClass("active");
+  navBar.css("color","#9a454d")
+  navBar.css("background-color","white")
+})
 
 menuBtn.click(function() {
   menuBtn.addClass("avoid-clicks");
