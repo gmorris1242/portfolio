@@ -19,6 +19,10 @@
   src: url("fonts/Painted Lady.otf");
 }
 
+.btn:hover {
+  color: #f7a072;
+}
+
 body {
   overflow: hidden;
   position: relative;
@@ -98,7 +102,11 @@ nav li {
   margin: 0 5px;
   text-transform: uppercase;
   cursor: pointer;
-  /* transition: all .1s linear; */
+  transition: color 200ms;
+}
+
+nav li:hover {
+  color: #f7a072;
 }
 
 .active {
@@ -269,6 +277,11 @@ a {
   text-align: center;
   width: 60%;
   margin-left: 15px;
+  transition: 200ms;
+}
+
+a:hover {
+  opacity: .75;
 }
 
 /* NOTE: contact page */
